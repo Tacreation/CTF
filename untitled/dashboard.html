@@ -1,0 +1,78 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <!--[if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script><![endif]-->
+    <title></title>
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <link href="dashboard.css" rel="stylesheet">
+    <link href="anim.css" rel="stylesheet">
+</head>
+<body >
+<div class="wrapper" >
+    <header class="header" style="z-index: 5">
+
+        <aside class="left-sidebar"  id="mySidenav">
+            <div class="h-div2">
+                <h1 class="dedsec_txt"> <B style="color: #b9003f">DED</B>SEC</h1>
+            </div>
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="#">About</a>
+            <a href="#">Services</a>
+            <a href="#">Clients</a>
+            <a href="#">Contact</a>
+        </aside>
+
+        <div class="h-parent">
+            <div class="h-div1" id="main">
+                    <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>
+            </div>
+            <div class="h-div2">
+                <h1 class="dedsec_txt"> <B style="color: #b9003f">DED</B>SEC</h1>
+            </div>
+            <div class="h-div3">
+
+            </div>
+        </div>
+
+    </header>
+    <div class="middle" >
+        <div class="container"  id="mainx" >
+            <main class="content" >
+
+                <div class="p-1">
+                    <div class="d-1"> </div>
+                    <div class="d-2"> </div>
+                    <div class="d-3"> </div>
+                    <div class="d-4"> </div>
+                </div>
+
+            </main>
+        </div>
+        <aside class="right-sidebar">
+            <strong></strong>  </aside>
+    </div>
+</div>
+
+
+<footer class="footer">
+    <strong></strong> </footer>
+</body>
+
+<script>
+    function openNav() {
+        document.getElementById("mySidenav").style.width = "250px";
+        document.getElementById("mainx").style.marginLeft = "250px";
+        document.body.style.background= "rgba(0,0,0,0.8)";
+    }
+
+    function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+        document.getElementById("mainx").style.marginLeft= "0";
+        document.body.style.backgroundColor = "white";
+    }
+</script>
+
+</html>
